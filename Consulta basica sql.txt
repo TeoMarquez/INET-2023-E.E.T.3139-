@@ -1,0 +1,40 @@
+======== DATO A TENER EN CUENTA ==========
+	Provincia : Juridiccion (23 + CABA)
+	Departamento : Departamento
+	Localidad : Localidad
+	Direccion: direccion dentro de una provincia>departamenteo>localidad
+	
+
+	//Consulta basica//
+SELECT Descripcion FROM departamentos WHERE departamentos.Id= 1;
+
+	// Sacar Descripcion con id //
+SELECT Descripcion FROM jurisdicciones WHERE Id = 6;
+# Sacar ids desde nombres
+SELECT Id FROM jurisdicciones WHERE jurisdicciones.Descripcion = 'Salta'; (Salta es 6 XD)
+
+	// Departamento con ID //
+SELECT Id FROM departamentos WHERE departamentos.Jurisdiccion_Id = 6;
+#Sacar unicamente descripcion con numero de provincia
+SELECT Descripcion FROM departamentos WHERE departamentos.Jurisdiccion_Id = 6;
+# Saca id y Descripcion
+SELECT Id,Descripcion FROM departamentos WHERE departamentos.Jurisdiccion_Id = 6;
+
+	// Localidades //
+# Mostrar toda la informacion existente en una provincia y departamento especifico
+SELECT * FROM localidades WHERE localidades.Jurisdiccion_Id = 6 AND localidades.Departamento_Id = 21;
+
+	// direcciones //
+
+SELECT * FROM `direcciones` WHERE direcciones.jurisdiccion_id = 6 AND direcciones.departamento_id = 21 AND localidad_id = 1;
+
+#Consulta de ejemplo, ya que no existe instituciones en el 21 de salta XD
+SELECT * FROM `direcciones` WHERE direcciones.jurisdiccion_id = 2 AND direcciones.departamento_id = 107 AND localidad_id = 1;
+
+# Solamente muestra direccion y codigo postal de un lugar
+
+SELECT direccion,cp FROM `direcciones` WHERE direcciones.jurisdiccion_id = 2 AND direcciones.departamento_id = 107 AND localidad_id = 1;
+
+	// Instituciones ( No contiene mas fk ) w//
+SELECT * FROM instituciones WHERE Instit_Id = 9;
+

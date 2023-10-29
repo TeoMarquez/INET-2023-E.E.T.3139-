@@ -1,0 +1,14 @@
+Show Tables
+
+Tables_in_inet_aulas_moviles
+contactos
+departamentos
+direcciones
+estado_etp
+gestiones
+instituciones
+jurisdicciones
+localidades
+ofertas
+planes_estudio
+sectores

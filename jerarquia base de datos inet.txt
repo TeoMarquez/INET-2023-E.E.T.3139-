@@ -1,0 +1,30 @@
+*departamentos
+	-Departamentos.Id
+	-Departamentos.Juridiccion_Id	(Fk)
+	-Descripcion
+*direcciones
+	-direccion.instit_id
+	-direccion.juridiccion_id
+	-direccion.departamento_id	
+	-direccion.localidad_id
+	-direccion
+	-CP
+*instituciones
+	-Instit_Id
+	-Nombre
+	-Cue
+	-Estado_Etp_Id
+	-Gestion_Id
+	-Aula_Taller
+	-Anio_Fundacion
+*juridicciones
+	-juridicciones.Id
+	-Descripcion
+*localidades
+	-localidades.Juridiccion_Id
+	-localidades.Departamento_Id
+*contactos
+	-contactos.instit_id
+	-telefono
+	-web
+	-mail
