@@ -1,112 +1,112 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    background-image: url('Imagen\ de\ WhatsApp\ 2023-10-27\ a\ las\ 21.33.50_f0170917.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-  
-
-#map {
-    border: none;
-    border-radius: 25px;
-    height: 72vh;
-    width: 100hw;
+  background-image: url('Imagen\ de\ WhatsApp\ 2023-10-27\ a\ las\ 21.33.50_f0170917.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.container-flex{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content:space-evenly;
-    
-  }
-  
-  .container-flex-options{
-    width: 700px;
-    height: 650px;
-    
-  }
-  
-.container-flex-map{
-    width: 600px;
-    height: 600px;
-  }
+#map {
+  border: 8px solid #0c3e63;
+  border-radius: 25px;
+  height: 72vh;
+  width: 100%;
+  box-shadow: -10px 0 10px #0c3e63, 10px 0 10px #0c3e63;
+
+}
+
+.container-flex {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.container-flex-options {
+  width: 90%; 
+  max-width: 700px; 
+  height: auto;
+}
+
+.container-flex-map {
+  width: 90%; 
+  max-width: 600px; 
+  height: auto;
+
+}
 
 .button-container {
-    background-color: #0E68AF;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 125px;
-    position: absolute;
-    left: 0;
-    height: 38vh;
-    width: 27%;
-    border-radius: 10px;
-  }
-  
-  .select-element {
-    background-color: #FFFFFF;
-    border: none;
-    padding: 20px;
-    margin: 25px 0;
-    color: #000000;
-    width: 100%;
-    cursor: pointer;
-    border-radius: 10px;
-  }
-  
-  .select-element:hover {
-    background-color:#000000;
-    color: #FFFFFF;
-  }
-  
+  background-color: #0E68AF; 
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5%; 
+  position: absolute;
+  left: 0;
+  height: 38vh;
+  width: 27%;
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: -10px 0 10px #0c3e63, 10px 0 10px #0c3e63;
+
+}
+.select-element {
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 20px;
+  margin: 2% 0; 
+  color: white;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
 .page-title {
-    text-align: center;
-    padding: 30px; 
-    color: #FFFFFF;
-    margin: 0;
-  }
-  
+  text-align: center;
+  padding: 3%; 
+  color: #FFFFFF;
+  margin: 0;
+}
 
 .top-bar {
-    background-color: #0c3e63;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px;
-  }
-  
-  .inet-text {
-    font-size: 30px;
-    color: #FFFFFF;
-    font-weight: bold;
-    margin-left: 20px;
-  }
-  
-  .buttons {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .button {
-    background-color: #fff;
-    border: none;
-    padding: 10px 20px;
-    color: black;
-    text-decoration: none;
-    border-radius: 9px;
-    cursor: pointer;
-  }
-  
-  .button:hover {
-    background-color: #000000;
-    color: white;
-  }
-  
+  background-color: #0c3e63;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%; 
+}
+
+.inet-text {
+  font-family:Product Sans;
+  font-size: 3em; 
+  color: #FFFFFF;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.button {
+  background-color: transparent; 
+  border: 2px solid white;
+  padding: 10px 20px;
+  color: white; 
+  text-decoration: none;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+
+.button:hover {
+  background-color: rgba(224, 224, 252, 0.5); 
+  color: black;
+}
