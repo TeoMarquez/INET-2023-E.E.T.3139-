@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('Imagen\ de\ WhatsApp\ 2023-10-27\ a\ las\ 21.33.50_f0170917.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+
+#map {
+    border: none;
+    border-radius: 25px;
+    height: 72vh;
+    width: 100hw;
+}
+
+.container-flex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-evenly;
+    
+  }
+  
+  .container-flex-options{
+    width: 700px;
+    height: 650px;
+    
+  }
+  
+.container-flex-map{
+    width: 600px;
+    height: 600px;
+  }
+
+.button-container {
+    background-color: #0E68AF;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 125px;
+    position: absolute;
+    left: 0;
+    height: 38vh;
+    width: 27%;
+    border-radius: 10px;
+  }
+  
+  .select-element {
+    background-color: #FFFFFF;
+    border: none;
+    padding: 20px;
+    margin: 25px 0;
+    color: #000000;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .select-element:hover {
+    background-color:#000000;
+    color: #FFFFFF;
+  }
+  
+.page-title {
+    text-align: center;
+    padding: 30px; 
+    color: #FFFFFF;
+    margin: 0;
+  }
+  
+
+.top-bar {
+    background-color: #0c3e63;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+  }
+  
+  .inet-text {
+    font-size: 30px;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .button {
+    background-color: #fff;
+    border: none;
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+    border-radius: 9px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #000000;
+    color: white;
+  }
+  
